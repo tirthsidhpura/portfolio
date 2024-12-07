@@ -3,3 +3,63 @@
 Your custom css here
 
 /////////////////////////////////////////*/
+
+
+
+/* General Styles */
+#portfolio-filters {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #filters li {
+    display: inline-block;
+  }
+  
+  #filters a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #333;
+    /* background-color: #f4f4f4; */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #filters a.active {
+    /* background-color: #007bff; */
+    color: white;
+  }
+  
+  #filters a:hover {
+    /* background-color: #0056b3; */
+    color: white;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    #filters {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #filters li {
+      display: block;
+      width: 100%;
+    }
+  
+    #filters a {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  

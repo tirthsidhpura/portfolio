@@ -298,9 +298,9 @@ Header intro
     bottom: 0;
     left: 0;
     z-index: 1;
-    background: rgba(50, 109, 221, 0.9);
-    opacity: 0;
-    visibility: hidden;
+    /* background: rgba(50, 109, 221, 0.9); */
+    opacity: 1;
+    visibility: visible;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
 }
@@ -317,12 +317,15 @@ Header intro
 }
 
 .work-entry-title {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 600;
     color: #fff;
-    opacity: 0;
+    opacity: 1;
     position: relative;
     top: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     -webkit-transition: all .5s cubic-bezier(0.4, .2, 0, 1) .2s;
     transition: all .5s cubic-bezier(0.4, .2, 0, 1) .2s
 }
