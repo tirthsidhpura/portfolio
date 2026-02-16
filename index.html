@@ -7,9 +7,15 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="author" content="TirthSidhpura.com" />
-    
+
+    <meta
+      name="description"
+      content="Highly skilled Software Developer with expertise in Frontend and Backend. Proven ability to quickly grasp new concepts and technologies. Seeking a challenging role to leverage my diverse skill set and contribute to innovative projects"
+    />
+
     <link rel="canonical" href="https://TirthSidhpura.com/" />
     <title>Tirth Sidhpura</title>
+
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet" />
@@ -23,10 +29,26 @@
   gtag('config', 'G-P4REQ9JLEC');
 </script>
   </head>
-  <meta
-    name="description"
-    content="Highly skilled Software Developer with expertise in Frontend and Backend. Proven ability to quickly grasp new concepts and technologies. Seeking a challenging role to leverage my diverse skill set and contribute to innovative projects"
-  />
+<script>
+  function downloadResume(event) {
+    event.preventDefault();
+
+    const fileUrl = "tirth_sidhpura_5483331911_r_rec.pdf";
+    const baseName = "tirth_sidhpura_5483331911_r_rec";
+    const randomNumber = Math.floor(100000 + Math.random() * 900000);
+
+    const fileName = `${baseName}_${randomNumber}.pdf`;
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
+
   <body>
     <div id="preloader">
       <div id="loader"></div>
@@ -51,6 +73,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -68,39 +91,65 @@
         </div>
       </div>
     </nav>
-    <header>
+
+    <!-- Header -->
+    <header class="py-5">
       <div class="container">
-        <div class="row d-flex align-content-center">
-          <div class="col-md-7">
-            <div class="headline">
+        <div class="row align-items-center min-vh-75">
+          <div class="col-lg-7">
+            <div class="headline py-4">
               <div class="headline-content">
-                <h1 class="headline-title display-3">
+                <h1 class="headline-title display-3 mb-3">
                   Hi, I am Tirth Sidhpura
                 </h1>
-                <p class="headline-subtitle">Software Engineer</p>
-                <button class="btn btn-primary">
-                    <a href="Tirth_Sidhpura_-_Software_Developer.pdf" download class="text-white text-decoration-none">Download Resume</a>
-                  </button>
-                  
+                <p class="headline-subtitle lead mb-4">Software Engineer</p>
+
+                <!-- better semantics: anchor styled as button -->
+                
+                          <a
+            href="tirth_sidhpura_5483331911_r_rec.pdf"
+            class="btn btn-primary px-4 py-2 text-white text-decoration-none"
+            onclick="downloadResume(event)"
+          >
+            Download Resume
+          </a>
+
+              
               </div>
             </div>
           </div>
+
+          <!-- optional column reserved for future image/illustration -->
+          <div class="col-lg-5 d-none d-lg-block"></div>
         </div>
       </div>
     </header>
     <!-- end: Header -->
-    <section class="space-md">
-      <!-- portfolio -->
+
+    <!-- Portfolio -->
+    <section class="space-md py-5">
       <div id="portfolio" class="container">
-        <div id="portfolio-filters">
-          <ul id="filters" class="p-0">
-            <li><a href="*" class="active">All</a></li>
-            <li><a href=".webapp">Web App</a></li>
-            <li><a href=".webscrapping">Web Scrapping</a></li>
-            <li><a href=".bot">Bot</a></li>
-          </ul>
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-6">
+            <h2 class="mb-0">Work</h2>
+            <p class="text-muted mb-0">Some of the projects I’ve built recently.</p>
+          </div>
+
+          <div class="col-md-6">
+            <div id="portfolio-filters" class="mt-3 mt-md-0">
+              <ul
+                id="filters"
+                class="p-0 m-0 d-flex flex-wrap justify-content-md-end"
+              >
+                <li><a href="*" class="active">All</a></li>
+                <li><a href=".webapp">Web App</a></li>
+                <li><a href=".webscrapping">Web Scrapping</a></li>
+                <li><a href=".bot">Bot</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        
+
         <div
           class="grid"
           data-cols="2"
@@ -108,13 +157,10 @@
           data-height="1"
           data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'
         >
-          <!-- end:entry -->
+          <!-- entry -->
           <div class="entry work-entry webscrapping">
             <a href="webscraping-project.html">
-              <div
-                class="entry-image imageBG"
-                data-img="img/webscrap1.jpeg"
-              ></div>
+              <div class="entry-image imageBG" data-img="img/webscrap1.jpeg"></div>
               <div class="work-entry-hover">
                 <div class="work-entry-content">
                   <div class="work-entry-title">Web Scrap</div>
@@ -124,6 +170,7 @@
             </a>
           </div>
           <!-- end:entry -->
+
           <div class="entry work-entry webapp">
             <a href="solxswap-project.html">
               <div class="entry-image imageBG" data-img="img/sol1.png"></div>
@@ -136,13 +183,9 @@
             </a>
           </div>
 
-          <!-- entry -->
           <div class="entry work-entry webapp">
             <a href="paperonboard-project.html">
-              <div
-                class="entry-image img-fluid imageBG"
-                data-img="img/pob1.png"
-              ></div>
+              <div class="entry-image img-fluid imageBG" data-img="img/pob1.png"></div>
               <div class="work-entry-hover">
                 <div class="work-entry-content">
                   <div class="work-entry-title">paperonboard.in</div>
@@ -151,13 +194,27 @@
               </div>
             </a>
           </div>
-          <!-- end:entry -->
+
           <div class="entry work-entry webapp">
-            <a href="vaulture-project.html">
+            <a href="hybrid-weather-app-project.html">
               <div
-                class="entry-image imageBG"
-                data-img="img/vaulture1.png"
+                class="entry-image img-fluid imageBG"
+                data-img="img/weather_pro.png"
               ></div>
+              <div class="work-entry-hover">
+                <div class="work-entry-content">
+                  <div class="work-entry-title">
+                    Weather Data Engineering Platform
+                  </div>
+                  <div class="work-entry-cat">Web</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- <div class="entry work-entry webapp">
+            <a href="vaulture-project.html">
+              <div class="entry-image imageBG" data-img="img/vaulture1.png"></div>
               <div class="work-entry-hover">
                 <div class="work-entry-content">
                   <div class="work-entry-title">Vaulture</div>
@@ -165,11 +222,13 @@
                 </div>
               </div>
             </a>
-          </div>
-          <!-- end:entry -->
+          </div> -->
 
           <div class="entry work-entry bot">
-            <a href="https://github.com/tirthsidhpura/rsi-calculation-binance" target="_blank">
+            <a
+              href="https://github.com/tirthsidhpura/rsi-calculation-binance"
+              target="_blank"
+            >
               <div class="entry-image imageBG" data-img="img/rsibot.jpeg"></div>
               <div class="work-entry-hover">
                 <div class="work-entry-content">
@@ -181,52 +240,53 @@
           </div>
         </div>
       </div>
-      <!-- /end:portfolio -->
     </section>
+    <!-- /end:portfolio -->
 
     <!-- Education Section -->
-
     <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-4">Education</h2>
+        <div class="text-center mb-5">
+          <h2 class="mb-2">Education</h2>
+          <p class="text-muted mb-0">My academic background.</p>
+        </div>
+
         <div class="row g-4">
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
               <div class="card-body">
-                <h5 class="card-title text-primary">Master Computer Science</h5>
+                <h5 class="card-title text-primary mb-1">Master Computer Science</h5>
                 <p class="card-subtitle text-muted mb-2">Algoma University</p>
-                <p class="small text-muted">Jan 2025 - Dec 2025</p>
-                <p class="card-text">CGPA -</p>
+                <p class="small text-muted mb-3">Jan 2025 - Dec 2025</p>
+                <p class="card-text mb-0">GPA - 3.8</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
               <div class="card-body">
-                <h5 class="card-title text-primary">
-                  B.E. Computer Engineering
-                </h5>
+                <h5 class="card-title text-primary mb-1">B.E. Computer Engineering</h5>
                 <p class="card-subtitle text-muted mb-2">
                   Gujarat Technological University
                 </p>
-                <p class="small text-muted">2020 - 2023</p>
-                <p class="card-text">CGPA - 7.8</p>
+                <p class="small text-muted mb-3">2020 - 2023</p>
+                <p class="card-text mb-0">CGPA - 7.8</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
               <div class="card-body">
-                <h5 class="card-title text-primary">
-                  Dipoma Electrical Engineering
+                <h5 class="card-title text-primary mb-1">
+                  Diploma Electrical Engineering
                 </h5>
                 <p class="card-subtitle text-muted mb-2">
                   Gujarat Technological University
                 </p>
-                <p class="small text-muted">2017 - 2020</p>
-                <p class="card-text">CGPA - 7.2</p>
+                <p class="small text-muted mb-3">2017 - 2020</p>
+                <p class="card-text mb-0">CGPA - 7.2</p>
               </div>
             </div>
           </div>
@@ -241,11 +301,13 @@
           <div class="col-md-3">
             <div class="copy">&copy; 2025 TirthSidhpura.com</div>
           </div>
+
           <div class="col-md-9">
             <h3 class="footer-title">
               "Crafting robust, scalable, and secure server-side solutions to
               power seamless user experiences."
             </h3>
+
             <div class="row mt-5">
               <div class="col-md-4">
                 <h5>Start a conversation</h5>
@@ -261,6 +323,7 @@
                   </li>
                 </ul>
               </div>
+
               <div class="col-md-4">
                 <h4>Portfolio sites</h4>
                 <ul class="list-unstyled p-0">
@@ -284,6 +347,7 @@
                   </li>
                 </ul>
               </div>
+
               <div class="col-md-4">
                 <h4>Quick links</h4>
                 <ul class="list-unstyled p-0">
@@ -295,13 +359,15 @@
         </div>
       </div>
     </footer>
-    <!-- /main content -->
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+
     <!-- Custom JavaScript for this theme -->
     <script src="js/custom.js"></script>
   </body>
