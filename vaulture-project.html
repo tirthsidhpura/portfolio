@@ -1,54 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
   <!-- Mirrored from themewagon.github.io/minimis/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Dec 2024 04:16:21 GMT -->
-  <!-- Added by HTTrack --><meta
-    http-equiv="content-type"
-    content="text/html;charset=utf-8"
-  /><!-- /Added by HTTrack -->
+  <!-- Added by HTTrack -->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <!-- /Added by HTTrack -->
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="author" content="TirthSidhpura.com" />
-    
+    <meta
+      name="description"
+      content="Vaulture is a secure dynamic form-building platform built with TypeScript, Node.js, React.js, and MongoDB. It includes premium subdomains, payment plans, response notifications, and super admin monitoring."
+    />
+
     <link rel="canonical" href="https://TirthSidhpura.com/" />
-    <title>TirthSidhpura</title>
+    <title>TirthSidhpura - Vaulture Project</title>
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Fontaweome icons replacment -->
+
+    <!-- Fontawesome icons replacement -->
     <link
       rel="stylesheet"
       href="../../maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css"
     />
-    <!-- Theme styles for this template -->
+
+    <!-- Theme styles -->
     <link href="css/style.css" rel="stylesheet" />
-    <!-- Your Custom styles for this template -->
+    <!-- Custom styles -->
     <link href="css/custom.css" rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4REQ9JLEC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-P4REQ9JLEC");
+
+      
+    </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const animatedItems = document.querySelectorAll(
+      ".tech-card, .mini-tech-card, .showcase-box, .arch-box, .flow-step"
+    );
+
+    animatedItems.forEach((item) => {
+      item.classList.add("reveal-up");
+    });
+
+    const revealOnScroll = () => {
+      animatedItems.forEach((item) => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) {
+          item.classList.add("active");
+        }
+      });
+    };
+
+    revealOnScroll();
+    window.addEventListener("scroll", revealOnScroll);
+  });
+</script>
   </head>
 
   <body>
     <div id="preloader">
       <div id="loader"></div>
     </div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3" id="mainNav">
-      <div class="container"> <a class="navbar-brand js-scroll-trigger" href="index.html">TirthSidhpura</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="index.html">Home</a> </li>
-                  <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="index.html#portfolio">Work</a> </li>
-                  <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a> </li>
-              </ul>
-          </div>
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">TirthSidhpura</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#portfolio">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
+
+    <!-- Hero -->
     <header class="space-md">
       <div class="container">
-        <div class="row d-flex align-content-center">
+        <div class="row d-flex align-items-center">
           <div class="col-md-6">
             <div class="headline mt-0 mb-0">
               <div class="headline-content">
@@ -56,53 +115,331 @@
                   Secure Forms, Limitless Possibilities
                 </h1>
                 <p class="headline-subtitle">
-                  Revolutionize Your Form Building with Vaulture.
+                  Vaulture is a modern, secure, and scalable form-building platform designed
+                  to simplify data collection while delivering enterprise-grade performance.
+                </p>
+                <p class="headline-subtitle">
+                  Built for creators, businesses, and teams who need flexibility, branding,
+                  premium workflows, and complete control over every response.
+                </p>
+                <p class="headline-subtitle mb-0">
+                  <a
+                    style="color: red;"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://formlanding.paperonboard.in/"
+                  >
+                    Visit &gt;
+                  </a>
                 </p>
               </div>
             </div>
           </div>
+
           <div class="col-md-6">
-            <figure>
-              <img src="img/vaulture2.png" alt="" class="img-fluid" />
+            <figure class="mb-0">
+              <img src="img/form_prev.gif" alt="Vaulture project preview" class="img-fluid" />
             </figure>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Main Content -->
     <section class="space-md">
+      <!-- Tech Stack Section -->
+<section class="space-md" id="tech-stack">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8">
+        <h2 class="display-4 mb-3">Technology Stack</h2>
+        <p class="lead">
+          Vaulture was engineered as a full-stack SaaS platform with a strong focus on
+          scalability, security, real-time workflows, and premium user experience.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="tech-card">
+          <div class="tech-icon">TS</div>
+          <h4>TypeScript</h4>
+          <p>
+            Used for type-safe backend and frontend development to improve code quality,
+            maintainability, and long-term scalability.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="tech-card">
+          <div class="tech-icon">N</div>
+          <h4>Node.js</h4>
+          <p>
+            Powers APIs, business logic, authentication, response processing, payments,
+            email workflows, and admin operations.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="tech-card">
+          <div class="tech-icon">R</div>
+          <h4>React.js</h4>
+          <p>
+            Used to build a responsive and dynamic frontend experience for form creation,
+            response viewing, dashboard control, and admin tools.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="tech-card">
+          <div class="tech-icon">DB</div>
+          <h4>MongoDB</h4>
+          <p>
+            Stores forms, responses, user plans, flags, subdomain mappings, and platform
+            activity in a flexible document-based structure.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-4 mb-4">
+        <div class="mini-tech-card">
+          <h5>Cloudflare Security</h5>
+          <p>DDoS mitigation, traffic filtering, caching, and edge protection.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="mini-tech-card">
+          <h5>Email Service</h5>
+          <p>Automatic notifications whenever a user receives a new form response.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="mini-tech-card">
+          <h5>Payment Integration</h5>
+          <p>Three pricing plans with premium feature unlocking and billing flow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skill Showcase Section -->
+<section class="space-md" id="my-role">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8">
+        <h2 class="display-4 mb-3">What I Built</h2>
+        <p class="lead">
+          This project showcases my ability to design and develop complete software systems,
+          not just UI screens. I worked across product architecture, backend logic, frontend
+          implementation, security handling, database design, and platform-level admin control.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="showcase-box">
+          <h4>Full-Stack SaaS Engineering</h4>
+          <p>
+            Built a complete form-builder platform similar to Google Forms, including
+            dynamic form rendering, response collection, dashboard management, payment
+            plans, premium features, and secure delivery.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="showcase-box">
+          <h4>Admin Monitoring System</h4>
+          <p>
+            Designed a super admin workflow where platform leaders can monitor all user
+            forms, investigate flagged forms, and deactivate harmful or abusive content.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="showcase-box">
+          <h4>Premium Subdomain Logic</h4>
+          <p>
+            Implemented premium branding support where users can get up to two custom
+            subdomains of their choice, while the default delivery remains on a secure
+            subdomain structure like secure.domain.com.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="showcase-box">
+          <h4>Security & Reliability</h4>
+          <p>
+            Integrated rate limiting, email notification services, payment workflows,
+            secure request handling, and Cloudflare-backed protection to make the
+            platform technically strong and production ready.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Architecture Section -->
+<section class="space-md" id="architecture">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-9">
+        <h2 class="display-4 mb-3">Software Architecture</h2>
+        <p class="lead">
+          Vaulture was designed as a layered full-stack architecture where the frontend,
+          backend services, data layer, and external infrastructure work together to
+          deliver a secure and scalable form platform.
+        </p>
+      </div>
+    </div>
+
+    <div class="architecture-wrapper">
+      <div class="arch-row">
+        <div class="arch-box glow-box">
+          <span class="arch-label">Frontend Layer</span>
+          <h4>React.js Client</h4>
+          <p>Form builder, dashboard, response viewer, billing UI, premium settings</p>
+        </div>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-row multi">
+        <div class="arch-box">
+          <span class="arch-label">API Layer</span>
+          <h4>Node.js + TypeScript APIs</h4>
+          <p>Authentication, forms, responses, users, admin actions, billing</p>
+        </div>
+
+        <div class="arch-box">
+          <span class="arch-label">Security Layer</span>
+          <h4>Rate Limiting + Validation</h4>
+          <p>Traffic control, abuse prevention, request validation, secure access</p>
+        </div>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-row multi">
+        <div class="arch-box">
+          <span class="arch-label">Service Layer</span>
+          <h4>Email Service</h4>
+          <p>Instant notifications sent when a form gets a new response</p>
+        </div>
+
+        <div class="arch-box">
+          <span class="arch-label">Service Layer</span>
+          <h4>Payment Service</h4>
+          <p>Three plans, premium activation, billing workflow, feature unlocking</p>
+        </div>
+
+        <div class="arch-box">
+          <span class="arch-label">Admin Layer</span>
+          <h4>Super Admin Panel</h4>
+          <p>Platform-wide monitoring, flags review, form deactivation control</p>
+        </div>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-row multi">
+        <div class="arch-box">
+          <span class="arch-label">Data Layer</span>
+          <h4>MongoDB</h4>
+          <p>Stores users, forms, responses, plans, flags, subdomains, logs</p>
+        </div>
+
+        <div class="arch-box">
+          <span class="arch-label">Infrastructure</span>
+          <h4>Cloudflare</h4>
+          <p>DNS, edge security, performance optimization, traffic protection</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Flow Section -->
+<section class="space-md" id="platform-flow">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8">
+        <h2 class="display-4 mb-3">Platform Flow</h2>
+        <p class="lead">
+          A simple view of how the system works from form creation to response delivery.
+        </p>
+      </div>
+    </div>
+
+    <div class="flow-line">
+      <div class="flow-step active-step">
+        <span>1</span>
+        <h5>User Creates Form</h5>
+      </div>
+      <div class="flow-step">
+        <span>2</span>
+        <h5>Form is Published</h5>
+      </div>
+      <div class="flow-step">
+        <span>3</span>
+        <h5>Responses Collected</h5>
+      </div>
+      <div class="flow-step">
+        <span>4</span>
+        <h5>Email Notification Sent</h5>
+      </div>
+      <div class="flow-step">
+        <span>5</span>
+        <h5>Admin Can Monitor Flags</h5>
+      </div>
+    </div>
+  </div>
+</section>
       <div class="container">
-        <figure>
-          <video
-            src="img/vaulture.mp4"
-            alt=""
-            class="img-fluid"
-            style="background-size: cover"
-            autoplay
-            muted
-            loop
-            playsinline
-          >
-            Your browser does not support the video tag.
-          </video>
-        </figure>
+      <figure>
+<img
+  src="img/form_creation.gif"
+  alt="Form creation preview"
+  class="img-fluid"
+  style="width: 100%; border-radius: 14px;"
+/>
+</figure>
+
         <div class="row d-flex justify-content-start space-md">
-          <div class="col-md-2">
+          <div class="col-md-3">
             <ul class="list-unstyled project-intro">
-              <li class="title">Feature Highlights</li>
-              <li>Advanced Encryption</li>
-              <li>User-Friendly Interface</li>
-              <li>Secure Cryptocurrency Payments</li>
-              <li>Instant Notifications</li>
-              <li>Data Collection and Export</li>
+              <li class="title">Core Highlights</li>
+              <li>Built with TypeScript, Node.js, React.js, and MongoDB</li>
+              <li>Dynamic form builder with real-time flexibility</li>
+              <li>Super Admin panel for global monitoring</li>
+              <li>Premium custom subdomain support</li>
+              <li>Payment integration with 3 plans</li>
+              <li>Email notifications for every response</li>
+              <li>Rate limiting and security-first architecture</li>
+              <li>Cloudflare-powered protection and delivery</li>
             </ul>
           </div>
+
           <div class="col-md-7 offset-md-1">
             <p class="h4">
-              At Vaulture, we offer an array of powerful features designed to
-              elevate your form creation and data management experience. Whether
-              you're an individual user or an enterprise, our platform provides
-              a suite of tools that make creating, sharing, and managing forms
-              incredibly simple, all while keeping your data secure
+              Vaulture is built as a complete end-to-end form platform, similar in usability
+              to Google Forms, but designed with stronger branding, premium customization,
+              admin-level control, and production-grade security. From form creation to
+              response collection, user notifications, payments, and moderation, every part
+              of the system is designed to be reliable, scalable, and secure.
             </p>
           </div>
         </div>
@@ -110,21 +447,21 @@
         <div class="row space-md">
           <div class="col-md-8">
             <h3>
-              Vaulture’s onboarding process is designed for simplicity. Sign up,
-              choose your plan, and start building forms in minutes. No
-              technical know-how required—just effortless setup, allowing you to
-              dive into creating professional forms right away.
+              The platform allows users to create fully dynamic forms through an intuitive
+              interface, making it easy to launch professional forms without technical
+              complexity. Whether it is a simple feedback form or a more advanced structured
+              workflow, Vaulture adapts seamlessly to different use cases.
             </h3>
           </div>
         </div>
-        <div class="row">
+
+        <div class="row align-items-center">
           <div class="col-md-6">
-            <figure>
+            <figure class="mb-0">
               <video
                 src="img/vaulture2.mp4"
-                alt=""
                 class="img-fluid"
-                style="background-size: cover"
+                style="background-size: cover;"
                 autoplay
                 muted
                 loop
@@ -134,105 +471,184 @@
               </video>
             </figure>
           </div>
+
           <div class="col-md-6">
             <h3>
-              Design forms that align with your brand. Vaulture offers a
-              dedicated subdomain and a fully customizable workspace where you
-              can tailor everything from fonts and colors to advanced logic, all
-              within a drag-and-drop interface that makes form creation easy and
-              enjoyable.
+              Vaulture includes a powerful super admin panel used by the head team of the
+              application to monitor all forms created by users across the platform. If a form
+              receives a high number of user flags or suspicious activity, the admin can review
+              and deactivate it to maintain platform trust, quality, and safety.
             </h3>
           </div>
         </div>
 
+        <br />
+        <br />
+        <br />
 
-
-        <br>
-        <br>
-        <br>
         <!-- row 2 -->
-
-        <div class="row">
-            <div class="col-md-6">
-                <h3>
-                    Design forms that align with your brand. Vaulture offers a
-                    dedicated subdomain and a fully customizable workspace where you
-                    can tailor everything from fonts and colors to advanced logic, all
-                    within a drag-and-drop interface that makes form creation easy and
-                    enjoyable.
-                  </h3>
-            </div>
-            <div class="col-md-6">
-          
-
-              <figure>
-                <video
-                  src="img/vaulture2.mp4"
-                  alt=""
-                  class="img-fluid"
-                  style="background-size: cover"
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                >
-                  Your browser does not support the video tag.
-                </video>
-              </figure>
-              
-            </div>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3>
+              Premium users get access to advanced branding features, including up to two
+              custom subdomains of their choice. By default, forms are served through a secure
+              subdomain structure such as <strong>secure.domain.com</strong>, giving users a
+              professional and trusted experience while maintaining deployment consistency
+              across the platform.
+            </h3>
           </div>
 
+          <div class="col-md-6">
+            <figure class="mb-0">
+              <video
+                src="img/vaulture2.mp4"
+                class="img-fluid"
+                style="background-size: cover;"
+                autoplay
+                muted
+                loop
+                playsinline
+              >
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <figure class="mb-0">
+              <img src="img/form_payment.png" alt="Vaulture dashboard interface" class="img-fluid" />
+            </figure>
+          </div>
+
+          <div class="col-md-6">
+            <h3>
+              The system also includes integrated payment services with three different plans,
+              enabling a clean upgrade path for users based on their needs. Each plan is
+              structured to support different levels of usage, customization, and premium
+              benefits, making the platform suitable for both individuals and growing teams.
+            </h3>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3>
+              On the technical side, Vaulture is engineered as a complete service ecosystem.
+              It includes rate limiting to prevent abuse, automated email services to notify
+              users whenever a new form response is submitted, dynamic response handling, and
+              a scalable backend architecture built to support continuous growth and reliable
+              performance.
+            </h3>
+          </div>
+
+          <div class="col-md-6">
+            <figure class="mb-0">
+              <img src="img/form_all_image.png" alt="Vaulture secure form system" class="img-fluid" />
+            </figure>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="row space-md">
+          <div class="col-md-12">
+            <h3>
+              Security is one of the strongest foundations of Vaulture. The platform is
+              protected using Cloudflare services for performance optimization, traffic
+              filtering, and enhanced security at the edge. Combined with backend validation,
+              rate limiting, secure payment handling, and controlled admin moderation, the
+              system is designed to deliver a dependable and technically robust form-building
+              experience.
+            </h3>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- footer -->
+
+    <!-- Footer -->
     <footer class="footer pb-5">
       <div class="container">
-          <div class="row">
-              <div class="col-md-3">
-                  <div class="copy"> &copy; 2025 TirthSidhpura.com </div>
-              </div>
-              <div class="col-md-9">
-                  <h3 class="footer-title">"Crafting robust, scalable, and secure server-side solutions to power seamless user experiences."</h3>
-                  <div class="row mt-5">
-                      <div class="col-md-4">
-                          <h5>Start a conversation</h5>
-                          <ul class="list-unstyled p-0">
-                              <li class="#"><a href="mailto:sidhpratirth5126@gmail.com" target="_blank" data-bypass="">sidhpuratirth5126@gmail.com</a>
-                                  <br> </li>
-                          </ul>
-                      </div>
-                      <div class="col-md-4">
-                          <h4>Portfolio sites</h4>
-                          <ul class="list-unstyled p-0">
-                              <li class="#"> <a href="https://paperonboard.in" target="_blank">paperonboard.in</a></li>
-                              <li class="#"><a href="https://vaulture.net" target="_blank">vaulture.net</a>
-                              <li class=""><a href="https://solana-frontend-psi.vercel.app/" target="_blank">SolanaXSwap</a>
-                                  <br> </li>
-                          </ul>
-                      </div>
-                      <div class="col-md-4">
-                          <h4>Quick links</h4>
-                          <ul class="list-unstyled p-0">
-                              <li class="#"><a href="contact.html">contact</a></li>
-                              
-                          </ul>
-                      </div>
-                  </div>
-              </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="copy">&copy; 2025 TirthSidhpura.com</div>
           </div>
+
+          <div class="col-md-9">
+            <h3 class="footer-title">
+              "Crafting robust, scalable, and secure server-side solutions to power seamless
+              user experiences."
+            </h3>
+
+            <div class="row mt-5">
+              <div class="col-md-4">
+                <h5>Start a conversation</h5>
+                <ul class="list-unstyled p-0">
+                  <li>
+                    <a href="mailto:sidhpratirth5126@gmail.com" target="_blank" data-bypass="">
+                      sidhpuratirth5126@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <h4>Portfolio sites</h4>
+                <ul class="list-unstyled p-0">
+                  <li>
+                    <a href="https://paperonboard.in" target="_blank" rel="noopener noreferrer">
+                      paperonboard.in
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://formlanding.paperonboard.in/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Vaulture
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://solana-frontend-psi.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      SolanaXSwap
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <h4>Quick links</h4>
+                <ul class="list-unstyled p-0">
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </footer>
-    <!-- /main content -->
-    <!-- Bootstrap core JavaScript -->
+    </footer>
+
+    <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
-    <!-- Custom JavaScript for this theme -->
     <script src="js/custom.js"></script>
   </body>
-
-  <!-- Mirrored from themewagon.github.io/minimis/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Dec 2024 04:16:21 GMT -->
 </html>

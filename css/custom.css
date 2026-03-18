@@ -5,6 +5,327 @@ Your custom css here
 /////////////////////////////////////////*/
 
 
+/* =========================
+   SECTION TITLES
+========================= */
+#tech-stack h2,
+#my-role h2,
+#architecture h2,
+#platform-flow h2 {
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+#tech-stack .lead,
+#my-role .lead,
+#architecture .lead,
+#platform-flow .lead {
+  line-height: 1.9;
+  opacity: 0.9;
+}
+
+/* =========================
+   TECH STACK CARDS
+========================= */
+.tech-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px 22px;
+  height: 100%;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.1);
+}
+
+.tech-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  background: rgba(255, 0, 0, 0.08);
+  color: #111;
+  border: 1px solid rgba(255, 0, 0, 0.12);
+}
+
+.tech-card h4 {
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.tech-card p {
+  margin-bottom: 0;
+  line-height: 1.8;
+  color: #555;
+}
+
+.mini-tech-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.mini-tech-card:hover {
+  transform: translateY(-5px);
+}
+
+.mini-tech-card h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.mini-tech-card p {
+  margin-bottom: 0;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* =========================
+   SHOWCASE BOXES
+========================= */
+.showcase-box {
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid rgba(255, 0, 0, 0.7);
+}
+
+.showcase-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.09);
+}
+
+.showcase-box h4 {
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.showcase-box p {
+  margin-bottom: 0;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* =========================
+   ARCHITECTURE SECTION
+========================= */
+.architecture-wrapper {
+  background: linear-gradient(180deg, #ffffff 0%, #fcfcfc 100%);
+  border-radius: 24px;
+  padding: 40px 25px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.07);
+  position: relative;
+  overflow: hidden;
+}
+
+.arch-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.arch-row.multi {
+  justify-content: center;
+}
+
+.arch-box {
+  background: #fff;
+  min-width: 260px;
+  max-width: 320px;
+  padding: 24px 20px;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.arch-box:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.arch-box h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.arch-box p {
+  margin-bottom: 0;
+  line-height: 1.7;
+  color: #555;
+}
+
+.arch-label {
+  display: inline-block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: red;
+}
+
+.arch-arrow {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 18px 0;
+  color: #999;
+  animation: floatArrow 2s infinite ease-in-out;
+}
+
+@keyframes floatArrow {
+  0% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(6px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.7; }
+}
+
+.glow-box {
+  position: relative;
+}
+
+.glow-box::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgba(255,0,0,0.15), rgba(255,255,255,0.1), rgba(255,0,0,0.12));
+  z-index: -1;
+  filter: blur(10px);
+}
+
+/* =========================
+   FLOW LINE
+========================= */
+.flow-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  flex: 1;
+  min-width: 180px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 24px 16px;
+  text-align: center;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.flow-step:hover {
+  transform: translateY(-6px);
+}
+
+.flow-step span {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.1);
+  color: #111;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.flow-step h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.active-step {
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  box-shadow: 0 18px 45px rgba(255, 0, 0, 0.08);
+}
+
+/* =========================
+   SMALL ANIMATION
+========================= */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.8s ease;
+}
+
+.reveal-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* GIF responsive display */
+.gif-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-gif {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 14px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+
+  .form-gif {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .gif-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .architecture-wrapper {
+    padding: 25px 15px;
+  }
+
+  .arch-box {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .flow-line {
+    flex-direction: column;
+  }
+}
+
 
 /* General Styles */
 #portfolio-filters {
