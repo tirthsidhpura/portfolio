@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ErienceX crypto alert and Telegram automation project by Tirth Sidhpura." />
+    <title>ErienceX | Tirth Sidhpura</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span>TS</span><strong>Tirth Sidhpura</strong></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="section-shell detail-hero">
+        <div class="reveal">
+          <p class="eyebrow">Crypto automation</p>
+          <h1>ErienceX</h1>
+          <p class="hero-copy">
+            A high-level cryptocurrency price alert system connecting to Binance and KuCoin through
+            WebSockets, listening to 300+ pairs simultaneously, isolating alert work in child
+            processes, and streaming prices through Kafka for downstream services.
+          </p>
+          <div class="detail-meta">
+            <span>Binance</span>
+            <span>KuCoin</span>
+            <span>300+ pairs</span>
+            <span>Child processes</span>
+            <span>Kafka streams</span>
+          </div>
+          <a class="button button-primary" href="index.html#projects">Back to Projects</a>
+        </div>
+        <div class="cinematic-panel flow-map reveal" aria-label="Crypto alert network visual">
+          <span class="detail-node">Market</span>
+          <span class="detail-node">Signals</span>
+          <span class="detail-node">Bot</span>
+          <span class="detail-node">Action</span>
+        </div>
+      </section>
+      <section class="section-shell">
+        <article class="detail-section reveal">
+          <div><p class="eyebrow">Challenge</p><h2>Streaming many markets without blocking alert logic.</h2></div>
+          <div class="detail-content">
+            <p>The system separated price listening, alert evaluation, and service-level consumption so market feeds could remain responsive even when users configured many alerts across many pairs.</p>
+          </div>
+        </article>
+        <article class="detail-section reveal">
+          <div><p class="eyebrow">Build</p><h2>Exchange alerts connected to bot-driven actions.</h2></div>
+          <div class="detail-content">
+            <div class="detail-grid">
+              <div class="detail-card"><h3>Market Feeds</h3><p>Connected to Binance and KuCoin WebSockets for high-volume pair monitoring.</p></div>
+              <div class="detail-card"><h3>Process Isolation</h3><p>Used separate processes for alert work so one heavy alert path did not block others.</p></div>
+              <div class="detail-card"><h3>Kafka Pipeline</h3><p>Streamed prices into services that needed specific market data.</p></div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer"><p>&copy; 2026 Tirth Sidhpura.</p><a href="index.html#projects">Back to projects</a></footer>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

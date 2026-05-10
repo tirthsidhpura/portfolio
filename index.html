@@ -2,377 +2,382 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="author" content="TirthSidhpura.com" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Tirth Sidhpura" />
     <meta
       name="description"
-      content="Highly skilled Software Developer with expertise in Frontend and Backend. Proven ability to quickly grasp new concepts and technologies. Seeking a challenging role to leverage my diverse skill set and contribute to innovative projects"
+      content="Tirth Sidhpura is a Software Engineer focused on backend systems, APIs, automation, cloud deployments, dashboards, and full-stack product engineering."
     />
-
-    <link rel="canonical" href="https://TirthSidhpura.com/" />
-    <title>Tirth Sidhpura</title>
-
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/custom.css" rel="stylesheet" />
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4REQ9JLEC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-P4REQ9JLEC');
-</script>
+    <link rel="canonical" href="https://tirthsidhpura.github.io/portfolio/" />
+    <title>Tirth Sidhpura | Software Engineer</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-<script>
-  function downloadResume(event) {
-    event.preventDefault();
-
-    const fileUrl = "tirth_sidhpura_1832026.pdf";
-    const baseName = "tirth_sidhpura_5483331911_r_rec";
-    const randomNumber = Math.floor(100000 + Math.random() * 900000);
-
-    const fileName = `${baseName}_${randomNumber}.pdf`;
-
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.download = fileName;
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-</script>
-
   <body>
-    <div id="preloader">
-      <div id="loader"></div>
-    </div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="page-noise" aria-hidden="true"></div>
 
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3"
-      id="mainNav"
-    >
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"
-          >TirthSidhpura</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <header class="site-header" data-nav>
+      <a class="brand" href="index.html" aria-label="Tirth Sidhpura home">
+        <span>TS</span>
+        <strong>Tirth Sidhpura</strong>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+        <span>Dark</span>
+      </button>
+    </header>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contact.html"
-                >Contact</a
-              >
-            </li>
-          </ul>
+    <main>
+      <section class="hero section-shell" id="top">
+        <canvas class="hero-canvas" data-network-canvas aria-hidden="true"></canvas>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Software systems with product sense</p>
+          <h1>Tirth Sidhpura</h1>
+          <p class="hero-title">Software Engineer | Backend | Full-Stack | Cloud</p>
+          <p class="hero-copy">
+            I build fast, reliable backend and full-stack systems for automation, dashboards,
+            APIs, data-heavy workflows, and cloud-ready products used by real teams.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#experience">View Experience</a>
+            <a class="button button-secondary" href="contact.html">Contact Me</a>
+            <a class="button button-secondary" href="tirth_sidhpura_1832026.pdf" download>Download Resume</a>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <!-- Header -->
-    <header class="py-5">
-      <div class="container">
-        <div class="row align-items-center min-vh-75">
-          <div class="col-lg-7">
-            <div class="headline py-4">
-              <div class="headline-content">
-                <h1 class="headline-title display-3 mb-3">
-                  Hi, I am Tirth Sidhpura
-                </h1>
-                <p class="headline-subtitle lead mb-4">Software Engineer</p>
-
-                <!-- better semantics: anchor styled as button -->
-                
-                          <a
-            href="tirth_sidhpura_5483331911_r_rec.pdf"
-            class="btn btn-primary px-4 py-2 text-white text-decoration-none"
-            onclick="downloadResume(event)"
-          >
-            Download Resume
-          </a>
-
-              
-              </div>
+        <aside class="system-console reveal" aria-label="Engineering system snapshot">
+          <div class="console-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="console-metrics">
+            <div>
+              <small>Users served</small>
+              <strong>1000+</strong>
+            </div>
+            <div>
+              <small>Workload reduced</small>
+              <strong>50%</strong>
+            </div>
+            <div>
+              <small>Focus</small>
+              <strong>APIs / Cloud</strong>
             </div>
           </div>
-
-          <!-- optional column reserved for future image/illustration -->
-          <div class="col-lg-5 d-none d-lg-block"></div>
-        </div>
-      </div>
-    </header>
-    <!-- end: Header -->
-
-    <!-- Portfolio -->
-    <section class="space-md py-5">
-      <div id="portfolio" class="container">
-        <div class="row mb-4 align-items-center">
-          <div class="col-md-6">
-            <h2 class="mb-0">Work</h2>
-            <p class="text-muted mb-0">Some of the projects I’ve built recently.</p>
+          <div class="code-lines" aria-hidden="true">
+            <span>POST /api/workflows/sync</span>
+            <span>docker compose up --scale services</span>
+            <span>SELECT insights FROM data_pipeline</span>
+            <span>emit("alerts.realtime", payload)</span>
           </div>
+          <div class="data-stack" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </aside>
+      </section>
 
-          <div class="col-md-6">
-            <div id="portfolio-filters" class="mt-3 mt-md-0">
-              <ul
-                id="filters"
-                class="p-0 m-0 d-flex flex-wrap justify-content-md-end"
-              >
-                <li><a href="*" class="active">All</a></li>
-                <li><a href=".webapp">Web App</a></li>
-                <li><a href=".webscrapping">Web Scrapping</a></li>
-                <li><a href=".bot">Bot</a></li>
+      <section class="section-shell" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected builds with focused technical depth.</h2>
+        </div>
+        <div class="project-grid project-showcase">
+          <article class="project-card project-paper reveal">
+            <div class="project-visual document-visual" aria-hidden="true"></div>
+            <p class="eyebrow">Education platform</p>
+            <h3>PaperOnboard</h3>
+            <p>GTU question paper and study material platform scaled to serve 10,000+ daily users with PHP, SQL, production traffic, and organic growth channels.</p>
+            <div class="project-actions">
+              <a class="card-link" href="paperonboard-project.html">Case study</a>
+              <a class="card-link" href="https://paperonboard.in/" target="_blank" rel="noreferrer">Live site</a>
+            </div>
+          </article>
+          <article class="project-card project-saas reveal">
+            <div class="project-visual form-builder-visual" aria-hidden="true">
+              <div class="form-builder-panel">
+                <span>Name</span>
+                <span>Email</span>
+                <span>Feedback</span>
+                <strong>Submit</strong>
+              </div>
+              <div class="form-response">Response sent</div>
+            </div>
+            <p class="eyebrow">Full-stack SaaS</p>
+            <h3>Vaulture</h3>
+            <p>Dynamic form platform with custom subdomains, response emails, subscriptions, Cloudflare-secured private hosting, and super admin abuse monitoring.</p>
+            <div class="project-actions">
+              <a class="card-link" href="vaulture-project.html">Case study</a>
+              <a class="card-link" href="https://github.com/tirthsidhpura/form-app" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card project-chain project-featured reveal">
+            <div class="project-visual alert-dashboard-visual" aria-hidden="true">
+              <div class="alert-topline">
+                <span>BTC/USD</span>
+                <strong>$70,248</strong>
+                <em>Triggered</em>
+              </div>
+              <div class="alert-chart">
+                <span class="alert-line alert-line-above">Price Above Alert</span>
+                <span class="alert-line alert-line-below">Price Below Alert</span>
+                <svg viewBox="0 0 360 130" role="img" aria-label="Live price chart">
+                  <polyline points="0,95 38,88 74,104 112,78 150,82 190,52 225,66 264,34 312,42 360,18"></polyline>
+                </svg>
+              </div>
+              <div class="alert-cards">
+                <span>BTC Alert above $70,000</span>
+                <span>ETH Alert below $2,800</span>
+              </div>
+              <div class="alert-toast">Price Alert Triggered: BTC crossed above $70,000</div>
+            </div>
+            <p class="eyebrow">Crypto automation</p>
+            <h3>Cryptocurrency Price Alert System</h3>
+            <p>WebSocket system listening to 300+ Binance and KuCoin pairs with child processes per alert and Kafka streams for downstream services.</p>
+            <div class="project-actions">
+              <a class="card-link" href="eriencex-project.html">Case study</a>
+              <a class="card-link" href="https://github.com/tirthsidhpura/Crypto-Price-Alert-System" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card project-chain reveal">
+            <div class="project-visual trading-visual" aria-hidden="true"></div>
+            <p class="eyebrow">Trading automation</p>
+            <h3>RSI Trading & Automation</h3>
+            <p>Multithreaded RSI engine across 100+ trading pairs with WebSocket streaming, Binance APIs, stop-loss, take-profit, and fault-tolerant order handling.</p>
+            <div class="project-actions">
+              <a class="card-link" href="https://github.com/tirthsidhpura/rsi-calculation-binance" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card project-chain reveal">
+            <div class="project-visual solana-visual" aria-hidden="true"></div>
+            <p class="eyebrow">Blockchain app</p>
+            <h3>Solana Token Swap & Launch Tracker</h3>
+            <p>Decentralized SPL token swap and new-token discovery interface using Helius RPC directly for fast, trustless on-chain data.</p>
+            <div class="project-actions">
+              <a class="card-link" href="solxswap-project.html">Case study</a>
+              <a class="card-link" href="https://solana-frontend-psi.vercel.app/" target="_blank" rel="noreferrer">Live app</a>
+            </div>
+          </article>
+          <article class="project-card project-ai reveal">
+            <div class="project-visual neural-visual" aria-hidden="true"></div>
+            <p class="eyebrow">Computer vision</p>
+            <h3>Vehicle Damage Detection</h3>
+            <p>IEEE-published YOLO-based vehicle damage detection pipeline with data curation, class balancing, augmentation, and real-time inference focus.</p>
+            <div class="project-actions">
+              <a class="card-link" href="vehicle-damage-detection-project.html">Case study</a>
+            </div>
+          </article>
+          <article class="project-card project-weather reveal">
+            <div class="project-visual weather-visual" aria-hidden="true"></div>
+            <p class="eyebrow">Networked app</p>
+            <h3>Weather Application</h3>
+            <p>Hybrid backend data engineering platform with Node.js, Kafka, PostgreSQL/time-series patterns, historical APIs, real-time ingestion, and analytics.</p>
+            <div class="project-actions">
+              <a class="card-link" href="hybrid-weather-app-project.html">Case study</a>
+              <a class="card-link" href="https://github.com/tirthsidhpura/aqhi-dashboard" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card project-data reveal">
+            <div class="project-visual scrape-visual" aria-hidden="true"></div>
+            <p class="eyebrow">Data extraction</p>
+            <h3>Node.js Web Scraping</h3>
+            <p>Web data extraction workflows for transforming raw website data into structured formats such as JSON, CSV, and databases.</p>
+            <div class="project-actions">
+              <a class="card-link" href="webscraping-project.html">Case study</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell achievement-band" id="achievement">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Achievement</p>
+          <h2>Published IEEE research in computer vision.</h2>
+        </div>
+        <div class="achievement-panel reveal">
+          <p>
+            Published research on real-time vehicle damage detection using a data-centric YOLO pipeline.
+            The work used viewpoint filtering, class balancing, augmentation, and a curated 4,000-image
+            dataset across bumper, rear bumper, and windshield damage classes.
+          </p>
+          <div class="impact-strip">
+            <div><strong>0.789</strong><span>mAP@0.5</span></div>
+            <div><strong>0.76</strong><span>F1-score</span></div>
+            <div><strong>23ms</strong><span>GPU inference</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell split-section" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Backend depth, full-stack execution.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p>
+            I am a Software Engineer focused on backend and API development, full-stack
+            applications, performance, reliability, and clean architecture. My work spans
+            REST APIs, dashboards, automation pipelines, SQL and NoSQL databases, Dockerized
+            deployments, and cloud-ready services.
+          </p>
+          <p>
+            I enjoy turning messy operational problems into maintainable systems. I have
+            collaborated with frontend, QA, and business teams to ship production-ready
+            tools, improve internal workflows, and design interfaces that make complex
+            data easier to act on.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-shell" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools I use to build dependable products.</h2>
+        </div>
+        <div class="skill-marquee reveal" aria-label="Technical skills">
+          <div class="skill-track">
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>REST APIs</span>
+            <span>React</span>
+            <span>Angular</span>
+            <span>SQL</span>
+            <span>MongoDB</span>
+            <span>Docker</span>
+            <span>Cloud</span>
+            <span>Linux</span>
+            <span>CI/CD</span>
+            <span>Data systems</span>
+            <span>Blockchain / crypto systems</span>
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>REST APIs</span>
+            <span>React</span>
+          </div>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card reveal">
+            <span>01</span>
+            <h3>Backend Systems</h3>
+            <p>API services, authentication, RBAC, data modeling, and reliable business workflows.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>02</span>
+            <h3>Automation</h3>
+            <p>Tools that remove repetitive work, connect systems, and make operations measurable.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>03</span>
+            <h3>Cloud Delivery</h3>
+            <p>Dockerized services, Linux environments, deployment discipline, and maintainable releases.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>04</span>
+            <h3>Data Interfaces</h3>
+            <p>Dashboards, visualizers, and product surfaces that turn dense datasets into decisions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="experience">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Professional timeline.</h2>
+        </div>
+        <div class="timeline">
+          <a class="timeline-item reveal" href="experience-erience-solutions.html">
+            <span class="timeline-date">Oct 2021 - Oct 2024</span>
+            <div>
+              <p class="eyebrow">Software Engineer</p>
+              <h3>Erience Solutions</h3>
+              <p>
+                Built enterprise financial compliance platforms, RTA software, SDD systems, AI KYC
+                automation, REST APIs, dashboards, RBAC, 2FA, audit trails, and data-heavy workflows.
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+                <li>MongoDB</li>
+                <li>Docker</li>
               </ul>
             </div>
-          </div>
-        </div>
-
-        <div
-          class="grid"
-          data-cols="2"
-          data-margin="30"
-          data-height="1"
-          data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'
-        >
-          <!-- entry -->
-          <div class="entry work-entry webscrapping">
-            <a href="webscraping-project.html">
-              <div class="entry-image imageBG" data-img="img/webscrap1.jpeg"></div>
-              <div class="work-entry-hover">
-                <div class="work-entry-content">
-                  <div class="work-entry-title">Web Scrap</div>
-                  <div class="work-entry-cat">webscrapping</div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- end:entry -->
-
-                <div class="entry work-entry webapp">
-            <a href="vaulture-project.html">
-              <div class="entry-image imageBG" data-img="img/vaulture1.png"></div>
-              <div class="work-entry-hover">
-                <div class="work-entry-content">
-                  <div class="work-entry-title">Vaulture</div>
-                  <div class="work-entry-cat">Web</div>
-                </div>
-              </div>
-            </a>
-          </div> 
-
-          <div class="entry work-entry webapp">
-            <a href="solxswap-project.html">
-              <div class="entry-image imageBG" data-img="img/sol1.png"></div>
-              <div class="work-entry-hover">
-                <div class="work-entry-content">
-                  <div class="work-entry-title">solXswap</div>
-                  <div class="work-entry-cat">Web</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="entry work-entry webapp">
-            <a href="paperonboard-project.html">
-              <div class="entry-image img-fluid imageBG" data-img="img/pob1.png"></div>
-              <div class="work-entry-hover">
-                <div class="work-entry-content">
-                  <div class="work-entry-title">paperonboard.in</div>
-                  <div class="work-entry-cat">Web</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="entry work-entry webapp">
-            <a href="hybrid-weather-app-project.html">
-              <div
-                class="entry-image img-fluid imageBG"
-                data-img="img/weather_pro.png"
-              ></div>
-              <div class="work-entry-hover">
-                <div class="work-entry-content">
-                  <div class="work-entry-title">
-                    Weather Data Engineering Platform
-                  </div>
-                  <div class="work-entry-cat">Web</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-    
-
-          <div class="entry work-entry bot">
-            <a
-              href="https://github.com/tirthsidhpura/rsi-calculation-binance"
-              target="_blank"
-            >
-              <div class="entry-image imageBG" data-img="img/rsibot.jpeg"></div>
-              <div class="work-entry-hover">
-                <div class="work-entry-content">
-                  <div class="work-entry-title">RSI BOT</div>
-                  <div class="work-entry-cat">bot</div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /end:portfolio -->
-
-    <!-- Education Section -->
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="mb-2">Education</h2>
-          <p class="text-muted mb-0">My academic background.</p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary mb-1">Master Computer Science</h5>
-                <p class="card-subtitle text-muted mb-2">Algoma University</p>
-                <p class="small text-muted mb-3">Jan 2025 - Dec 2025</p>
-                <p class="card-text mb-0">GPA - 3.8</p>
-              </div>
+          </a>
+          <a class="timeline-item reveal" href="experience-depixed-media.html">
+            <span class="timeline-date">Jul 2020 - Oct 2020</span>
+            <div>
+              <p class="eyebrow">Graphic Designer</p>
+              <h3>Depixed Media</h3>
+              <p>
+                Created social media creatives, branding assets, and visual systems in Ahmedabad,
+                building the design sense that now informs clean, usable software interfaces.
+              </p>
+              <ul class="tag-list">
+                <li>Branding</li>
+                <li>Visual Design</li>
+                <li>UI Sense</li>
+              </ul>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary mb-1">B.E. Computer Engineering</h5>
-                <p class="card-subtitle text-muted mb-2">
-                  Gujarat Technological University
-                </p>
-                <p class="small text-muted mb-3">2020 - 2023</p>
-                <p class="card-text mb-0">CGPA - 7.8</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary mb-1">
-                  Diploma Electrical Engineering
-                </h5>
-                <p class="card-subtitle text-muted mb-2">
-                  Gujarat Technological University
-                </p>
-                <p class="small text-muted mb-3">2017 - 2020</p>
-                <p class="card-text mb-0">CGPA - 7.2</p>
-              </div>
-            </div>
-          </div>
+          </a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- footer -->
-    <footer class="footer pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="copy">&copy; 2025 TirthSidhpura.com</div>
-          </div>
-
-          <div class="col-md-9">
-            <h3 class="footer-title">
-              "Crafting robust, scalable, and secure server-side solutions to
-              power seamless user experiences."
-            </h3>
-
-            <div class="row mt-5">
-              <div class="col-md-4">
-                <h5>Start a conversation</h5>
-                <ul class="list-unstyled p-0">
-                  <li class="#">
-                    <a
-                      href="mailto:sidhpratirth5126@gmail.com"
-                      target="_blank"
-                      data-bypass=""
-                      >sidhpuratirth5126@gmail.com</a
-                    >
-                    <br />
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-md-4">
-                <h4>Portfolio sites</h4>
-                <ul class="list-unstyled p-0">
-                  <li class="#">
-                    <a href="https://paperonboard.in" target="_blank"
-                      >paperonboard.in</a
-                    >
-                  </li>
-                  <li class="#">
-                    <a href="https://vaulture.net" target="_blank"
-                      >vaulture.net</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      href="https://solana-frontend-psi.vercel.app/"
-                      target="_blank"
-                      >SolanaXSwap</a
-                    >
-                    <br />
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-md-4">
-                <h4>Quick links</h4>
-                <ul class="list-unstyled p-0">
-                  <li class="#"><a href="contact.html">contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <section class="section-shell" id="education">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education</p>
+          <h2>Academic path.</h2>
         </div>
-      </div>
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <span>Jan 2025 - Dec 2025</span>
+            <h3>Algoma University</h3>
+            <p>Master's degree, Computer Science</p>
+          </article>
+          <article class="education-card reveal">
+            <span>Sep 2020 - May 2023</span>
+            <h3>Ahmedabad Institute Of Technology</h3>
+            <p>Bachelor's degree, Computer Engineering</p>
+          </article>
+          <article class="education-card reveal">
+            <span>Jun 2017 - Apr 2020</span>
+            <h3>Government Polytechnic Ahmedabad</h3>
+            <p>Diploma of Education, Electrical Engineering</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section" id="contact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something reliable.</h2>
+        </div>
+        <div class="contact-panel reveal">
+          <a href="mailto:sidhpuratirth5126@gmail.com">sidhpuratirth5126@gmail.com</a>
+          <a href="https://www.linkedin.com/in/tirth-sidhpura" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="contact.html">Contact Page</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Tirth Sidhpura. Engineered in black, white, and clean interfaces.</p>
+      <a href="#top">Back to top</a>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-
-    <!-- Custom JavaScript for this theme -->
     <script src="js/custom.js"></script>
   </body>
-
-  <!-- Mirrored from themewagon.github.io/minimis/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Dec 2024 04:16:20 GMT -->
 </html>

@@ -326,6 +326,45 @@ Your custom css here
   }
 }
 
+/* Dark-mode support for legacy project detail components. */
+body.theme-dark .tech-card,
+body.theme-dark .mini-tech-card,
+body.theme-dark .showcase-box,
+body.theme-dark .architecture-wrapper,
+body.theme-dark .arch-box,
+body.theme-dark .flow-step {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.075);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+}
+
+body.theme-dark .tech-card h4,
+body.theme-dark .mini-tech-card h5,
+body.theme-dark .showcase-box h4,
+body.theme-dark .arch-box h4,
+body.theme-dark .flow-step h5 {
+  color: #fff;
+}
+
+body.theme-dark .tech-card p,
+body.theme-dark .mini-tech-card p,
+body.theme-dark .showcase-box p,
+body.theme-dark .arch-box p,
+body.theme-dark .flow-step p {
+  color: #d6d6d6;
+}
+
+body.theme-dark .tech-icon,
+body.theme-dark .flow-step span {
+  border-color: rgba(120, 190, 255, 0.32);
+  background: rgba(120, 190, 255, 0.14);
+  color: #fff;
+}
+
+body.theme-dark .arch-label {
+  color: #8cc8ff;
+}
+
 
 /* General Styles */
 #portfolio-filters {

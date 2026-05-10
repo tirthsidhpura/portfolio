@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Vehicle damage detection YOLOv10 project by Tirth Sidhpura." />
+    <title>Vehicle Damage Detection | Tirth Sidhpura</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span>TS</span><strong>Tirth Sidhpura</strong></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="section-shell detail-hero">
+        <div class="reveal">
+          <p class="eyebrow">Computer vision</p>
+          <h1>Vehicle Damage Detection</h1>
+          <p class="hero-copy">
+            A YOLOv13-based detection system for identifying vehicle damage from image input and
+            supporting faster inspection workflows.
+          </p>
+          <div class="detail-meta">
+            <span>YOLOv13</span>
+            <span>Computer vision</span>
+            <span>Detection pipeline</span>
+            <span>Automation</span>
+          </div>
+          <a class="button button-primary" href="index.html#projects">Back to Projects</a>
+        </div>
+        <div class="cinematic-panel flow-map reveal" aria-label="Computer vision pipeline visual">
+          <span class="detail-node">Image</span>
+          <span class="detail-node">Model</span>
+          <span class="detail-node">Boxes</span>
+          <span class="detail-node">Report</span>
+        </div>
+      </section>
+      <section class="section-shell">
+        <article class="detail-section reveal">
+          <div><p class="eyebrow">Purpose</p><h2>Automating visual inspection with object detection.</h2></div>
+          <div class="detail-content">
+            <p>The project explored how modern computer vision can support insurance and fleet inspection by detecting visible damage regions from images and turning visual input into structured signals for review. The research used a curated 4,000-image dataset and a data-centric filtering and augmentation pipeline.</p>
+          </div>
+        </article>
+        <article class="detail-section reveal">
+          <div><p class="eyebrow">Pipeline</p><h2>From raw image to usable detection output.</h2></div>
+          <div class="detail-content">
+            <div class="detail-grid">
+              <div class="detail-card"><h3>Input</h3><p>Vehicle images prepared for detection and analysis.</p></div>
+              <div class="detail-card"><h3>Model</h3><p>YOLOv13 used to identify bumper, rear bumper, and windshield damage.</p></div>
+              <div class="detail-card"><h3>Output</h3><p>Reached 0.789 mAP@0.5, 0.76 F1-score, and about 23 ms GPU inference.</p></div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer"><p>&copy; 2026 Tirth Sidhpura.</p><a href="index.html#projects">Back to projects</a></footer>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
