@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Vehicle damage detection YOLOv10 project by Tirth Sidhpura." />
+    <meta name="description" content="Vehicle damage detection research project using YOLOv13 by Tirth Sidhpura." />
     <title>Vehicle Damage Detection | Tirth Sidhpura</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -26,38 +26,43 @@
           <p class="eyebrow">Computer vision</p>
           <h1>Vehicle Damage Detection</h1>
           <p class="hero-copy">
-            A YOLOv13-based detection system for identifying vehicle damage from image input and
-            supporting faster inspection workflows.
+            IEEE paper project using YOLOv13 to detect exterior vehicle damage for faster,
+            more consistent insurance and fleet inspection workflows.
           </p>
           <div class="detail-meta">
             <span>YOLOv13</span>
-            <span>Computer vision</span>
-            <span>Detection pipeline</span>
-            <span>Automation</span>
+            <span>4,000 labeled images</span>
+            <span>0.789 mAP@0.5</span>
+            <span>23 ms inference</span>
           </div>
           <a class="button button-primary" href="index.html#projects">Back to Projects</a>
         </div>
-        <div class="cinematic-panel flow-map reveal" aria-label="Computer vision pipeline visual">
-          <span class="detail-node">Image</span>
-          <span class="detail-node">Model</span>
-          <span class="detail-node">Boxes</span>
-          <span class="detail-node">Report</span>
+        <div class="damage-gif-panel reveal" aria-label="Animated vehicle damage analysis preview">
+          <img src="img/vehicle-damage-analysis.gif" alt="Animated vehicle damage detection analysis on a damaged car" />
+          <div class="damage-gif-caption">
+            <span>YOLOv13 analysis</span>
+            <strong>Damage regions detected in real time</strong>
+          </div>
         </div>
       </section>
       <section class="section-shell">
         <article class="detail-section reveal">
           <div><p class="eyebrow">Purpose</p><h2>Automating visual inspection with object detection.</h2></div>
           <div class="detail-content">
-            <p>The project explored how modern computer vision can support insurance and fleet inspection by detecting visible damage regions from images and turning visual input into structured signals for review. The research used a curated 4,000-image dataset and a data-centric filtering and augmentation pipeline.</p>
+            <p>
+              Manual vehicle inspection is slow and subjective. This research uses a two-stage,
+              data-centric YOLOv13 pipeline to filter useful front/rear vehicle photos, detect
+              visible exterior damage, and support faster claim or fleet review.
+            </p>
           </div>
         </article>
         <article class="detail-section reveal">
-          <div><p class="eyebrow">Pipeline</p><h2>From raw image to usable detection output.</h2></div>
+          <div><p class="eyebrow">Paper Highlights</p><h2>Short, measurable, deployment-minded.</h2></div>
           <div class="detail-content">
             <div class="detail-grid">
-              <div class="detail-card"><h3>Input</h3><p>Vehicle images prepared for detection and analysis.</p></div>
-              <div class="detail-card"><h3>Model</h3><p>YOLOv13 used to identify bumper, rear bumper, and windshield damage.</p></div>
-              <div class="detail-card"><h3>Output</h3><p>Reached 0.789 mAP@0.5, 0.76 F1-score, and about 23 ms GPU inference.</p></div>
+              <div class="detail-card"><h3>Dataset</h3><p>Curated and labeled 4,000 images across bumper, rear bumper, and windshield damage.</p></div>
+              <div class="detail-card"><h3>Pipeline</h3><p>Filtered non-informative viewpoints and balanced classes using collection plus augmentation.</p></div>
+              <div class="detail-card"><h3>Result</h3><p>Achieved 0.789 mAP@0.5, 0.76 F1-score, and about 23 ms GPU inference.</p></div>
             </div>
           </div>
         </article>
